@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="STE AL RAEI CAR - location de voiture sans chauffeur à Rabat. Grande flotte de voitures économiques, berlines, SUV et véhicules premium."
+    />
+    <title>STE AL RAEI CAR | Location de Voitures à Rabat</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="STE AL RAEI CAR accueil">
+        <span class="brand-mark">AR</span>
+        <span>
+          <strong>STE AL RAEI CAR</strong>
+          <small>Location sans chauffeur</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#fleet">Flotte</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Réservation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-call" href="tel:+212537691557">05-37-69-15-57</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Présentation">
+        <div class="hero-media" role="img" aria-label="Voiture de location premium sur route"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Rabat · Maroc · SARL</p>
+          <h1>STE AL RAEI CAR</h1>
+          <p>
+            Location de voiture sans chauffeur avec une grande flotte disponible pour vos trajets
+            professionnels, voyages familiaux et déplacements longue durée.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Réserver maintenant</a>
+            <a class="btn btn-secondary" href="#fleet">Voir la flotte</a>
+          </div>
+          <dl class="hero-stats" aria-label="Points forts">
+            <div>
+              <dt>60+</dt>
+              <dd>Véhicules</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd>Assistance</dd>
+            </div>
+            <div>
+              <dt>Rabat</dt>
+              <dd>Agence locale</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="quick-search" aria-label="Recherche rapide">
+        <form id="quickSearchForm">
+          <label>
+            Départ
+            <input type="date" name="startDate" required />
+          </label>
+          <label>
+            Retour
+            <input type="date" name="endDate" required />
+          </label>
+          <label>
+            Catégorie
+            <select name="category">
+              <option value="all">Toutes les voitures</option>
+              <option value="economic">Économique</option>
+              <option value="sedan">Berline</option>
+              <option value="suv">SUV</option>
+              <option value="premium">Premium</option>
+              <option value="van">Familiale</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Trouver une voiture</button>
+        </form>
+      </section>
+
+      <section class="section section-intro" id="fleet">
+        <div>
+          <p class="eyebrow">Grande flotte</p>
+          <h2>Des voitures pour chaque besoin</h2>
+        </div>
+        <p>
+          Choisissez selon votre budget, votre confort et votre trajet. Les tarifs affichés sont
+          indicatifs et peuvent varier selon la durée, la saison et la disponibilité.
+        </p>
+      </section>
+
+      <section class="fleet-toolbar" aria-label="Filtres de flotte">
+        <div class="filter-buttons" role="group" aria-label="Filtrer par catégorie">
+          <button class="filter active" type="button" data-category="all">Toutes</button>
+          <button class="filter" type="button" data-category="economic">Économique</button>
+          <button class="filter" type="button" data-category="sedan">Berline</button>
+          <button class="filter" type="button" data-category="suv">SUV</button>
+          <button class="filter" type="button" data-category="premium">Premium</button>
+          <button class="filter" type="button" data-category="van">Familiale</button>
+        </div>
+      </section>
+
+      <section class="fleet-grid" id="fleetGrid" aria-live="polite"></section>
+
+      <section class="services" id="services">
+        <div class="section">
+          <p class="eyebrow">Services</p>
+          <h2>Une location simple, claire et fiable</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <span class="service-icon">01</span>
+            <h3>Location courte durée</h3>
+            <p>Réservez pour une journée, un week-end ou vos rendez-vous à Rabat et alentours.</p>
+          </article>
+          <article>
+            <span class="service-icon">02</span>
+            <h3>Longue durée</h3>
+            <p>Solutions souples pour entreprises, missions, chantiers et besoins récurrents.</p>
+          </article>
+          <article>
+            <span class="service-icon">03</span>
+            <h3>Véhicules contrôlés</h3>
+            <p>Entretien régulier, propreté soignée et contrôle avant remise des clés.</p>
+          </article>
+          <article>
+            <span class="service-icon">04</span>
+            <h3>Assistance locale</h3>
+            <p>Une équipe joignable pour accompagner votre location du départ au retour.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="booking-copy">
+          <p class="eyebrow">Demande de réservation</p>
+          <h2>Préparez votre location</h2>
+          <p>
+            Remplissez la demande avec vos dates et le véhicule souhaité. Notre équipe vous confirme
+            la disponibilité et les conditions de location.
+          </p>
+          <ul class="check-list">
+            <li>Permis de conduire valide</li>
+            <li>Pièce d'identité ou passeport</li>
+            <li>Contrat clair avant départ</li>
+          </ul>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <label>
+              Nom complet
+              <input type="text" name="fullName" autocomplete="name" required />
+            </label>
+            <label>
+              Téléphone
+              <input type="tel" name="phone" autocomplete="tel" required />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Date de départ
+              <input type="date" name="pickupDate" required />
+            </label>
+            <label>
+              Date de retour
+              <input type="date" name="returnDate" required />
+            </label>
+          </div>
+          <label>
+            Véhicule souhaité
+            <select name="vehicle" id="vehicleSelect" required></select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Lieu de départ, durée, options souhaitées..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </section>
+
+      <section class="company-band" id="contact">
+        <div class="company-main">
+          <p class="eyebrow">Agence</p>
+          <h2>STE AL RAEI CAR</h2>
+          <p>
+            H I M Secteur Idafi N° 10, Boulevard Salam, Hay Essahrij, Rabat 10120, Maroc.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+212537691557">Appeler l'agence</a>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Secteur%20Idafi%20N%C2%B0%2010%20Bd%20Salam%20Hay%20Essahrij%20Rabat" target="_blank" rel="noreferrer">Itinéraire</a>
+          </div>
+        </div>
+        <div class="legal-card">
+          <h3>Informations société</h3>
+          <dl>
+            <div>
+              <dt>Activité</dt>
+              <dd>Location de voiture sans chauffeur</dd>
+            </div>
+            <div>
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+212537691557">05-37-69-15-57</a></dd>
+            </div>
+            <div>
+              <dt>DUNS</dt>
+              <dd>353820257</dd>
+            </div>
+            <div>
+              <dt>RC</dt>
+              <dd>73745 - Tribunal de Rabat</dd>
+            </div>
+            <div>
+              <dt>ICE</dt>
+              <dd>000096393000093</dd>
+            </div>
+            <div>
+              <dt>Forme juridique</dt>
+              <dd>Société à Responsabilité Limitée</dd>
+            </div>
+            <div>
+              <dt>Capital</dt>
+              <dd>10 000 DHS</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> STE AL RAEI CAR. Tous droits réservés.</p>
+      <a href="#top">Retour en haut</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
